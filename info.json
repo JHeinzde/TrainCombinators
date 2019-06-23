@@ -1,0 +1,11 @@
+{
+    "name": "Cuirict train scheduling",
+    "version": "0.1.0",
+    "title": "Circuit trains",
+    "author": "Jonathan Heinz",
+    "contact": "heinzjonathan95@gmail.com",
+    "homepage": "https://www.jhe-sec.de",
+    "factorio_version": "0.17",
+    "dependencies": ["base >= 0.17"],
+    "description": "This mod adds the ability to change a trains scheduele on circuit conditions"
+}
