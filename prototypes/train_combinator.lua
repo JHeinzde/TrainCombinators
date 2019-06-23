@@ -5,17 +5,10 @@
 
 
 -- Use the decider-combinator as base
-local train_combinator = table.deepcopy(data.raw.decider-combinator["decider-combinator"])
+local train_combinator = table.deepcopy(data.raw.item["decider-combinator"])
 
 
 train_combinator.name = "train-combinator"
-train_combinator.icons= {
-   {
-      -- Does this work ?!
-      icon=data.raw.icon["decider-combinator"],
-      tint={r=1,g=0,b=0,a=0.3}
-   }
-}
 
 -- Clone the recepie of the decider-combinator.
 local recipe = table.deepcopy(data.raw.recipe["decider-combinator"])
