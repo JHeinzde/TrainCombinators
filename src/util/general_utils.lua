@@ -1,28 +1,38 @@
 -- general utility functions
 
-function setdefault(table, key, default) 
-    if table[key] == nil
+local Object = {}
+
+local function setdefault(table, key, default) 
+    if table[key] == nil then
        table[key] = default
     end
 end 
 
 
-function map(array, func) 
+local function map(array, func) 
     a = {}
-    for element in array
+    for element in array do
       a[#a] = func(element) 
     end
 
     return a 
 end 
 
-function filter(array, filter_func)
+local function filter(array, filter_func)
     a = {}
-    for element in array
-        if filter_func(element) 
+    for element in array do 
+        if filter_func(element) then
           a[#a] = element
         end
     end
 
     return a
 end 
+
+
+Object.map = map
+Object.filter = filter
+Object.setdefault = setdefault
+
+
+return Object
