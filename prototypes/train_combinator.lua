@@ -5,13 +5,14 @@
 
 
 -- Use the decider-combinator as base
-local train_combinator = table.deepcopy(data.raw.item["decider-combinator"])
+local train_combinator = table.deepcopy(data.raw["item"]["decider-combinator"])
 
 
 train_combinator.name = "train-combinator"
+train_combinator.result = "train-combinator"
 
--- Clone the recepie of the decider-combinator.
-local recipe = table.deepcopy(data.raw.recipe["decider-combinator"])
+-- Clone the recipe of the decider-combinator.
+local recipe = table.deepcopy(data.raw["recipe"]["decider-combinator"])
 recipe.enabled = true
 recipe.name = "train-combinator"
 recipe.ingredients = {{"copper-plate",10}}

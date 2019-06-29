@@ -1,0 +1,1 @@
+copy_prototype = require("src/util/general_utils").copy_prototypes
