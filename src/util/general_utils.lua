@@ -60,7 +60,7 @@ end
 
 Object.map = map
 Object.filter = filter
-Object.setdefault = setdefault
+Object.setdefault_global = setdefault_global
 Object.copy_prototype = copy_prototype
 
 return Object
