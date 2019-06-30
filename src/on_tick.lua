@@ -1,12 +1,19 @@
 -- import general_utils
 general_utils = require("src/utils/general_utils")
+entity_processor = require("src/entity_processor")
 
 -- on_tick.lua
 
 local Object = {}
 
-local function process_entity()
-    if entity.name != 
+local function process_entity(entity)
+    if entity.name != "train-combinator" then 
+        error("Invalid usage of the api. Registered Entity should only contain train-combinators")
+    end 
+
+    if entity_processor.check_connection_to_cn(entity) then 
+        get_connected_train_stations = entity_processor.get_connected_train_stations(entity)
+    end 
 end 
 
 
